@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>School Timetable with Iframe</title>
+ <style>
+ table {
+ border-collapse: collapse;
+ width: 100%;
+ }
+
+ th, td {
+ border: 1px solid black;
+ padding: 8px;
+ text-align: center;
+ }
+
+ th {
+ background-color: #f2f2f2;
+ }
+
+ .iframe-container {
+ position: relative;
+ overflow: hidden;
+ padding-top: 56.25%; /* 16:9 aspect ratio (change as needed) */
+ }
+
+ .iframe-container iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ }
+ </style>
+</head>
+<body>
+ <h1>School Timetable with Iframe</h1>
+
+ <table>
+ <tr>
+ <th>Time</th>
+ <th>Monday</th>
+ <th>Tuesday</th>
+ <th>Wednesday</th>
+ <th>Thursday</th>
+ <th>Friday</th>
+ </tr>
+
+ <tr>
+ <td>9:00 AM</td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/monday_9am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/tuesday_9am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/wednesday_9am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/thursday_9am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/friday_9am"></iframe>
+ </td>
+ </tr>
+
+ <tr>
+ <td>10:00 AM</td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/monday_10am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/tuesday_10am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/wednesday_10am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/thursday_10am"></iframe>
+ </td>
+ <td class="iframe-container">
+ <iframe src="https://www.example.com/friday_10am"></iframe>
+ </td>
+ </tr>
+
+ P
+
+ </table>
+
+</body>
+</html>
